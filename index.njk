@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+<header>
+	<h1>{{ metadata.title }}</h1>
+	<img src="https://www.gravatar.com/avatar/75307af344414a724528f5ba3920d01c?size=300" alt="" />
+</header>
+<main>
+	<section>
+		<h1>Posts</h1>
+		<ol class="posts">
+		{% for post in collections.posts | reverse %}
+			<li>
+				<a href="{{ post.url | url }}" />
+					{{ post.data.title }}
+				</a>
+				<time>{{ post.date.toISOString().split('T')[0] }}</time>
+			</li>
+		{% endfor %}
+		</ol>
+	</section>
+</main>
