@@ -1,0 +1,14 @@
+main > article {
+	padding-bottom: 2em;
+}
+
+main > article > p {
+	line-height: 1.8;
+	text-align: justify;
+}
+
+main > article > p > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}

@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+style: /styles/post.css
+---
+<main>
+	<article>
+		<header>
+			<h1>{{ title }}</h1>
+		</header>
+		<footer>
+			<time>{{ date.toISOString().split('T')[0] }}</time>
+		</footer>
+		{{ content | safe }}
+	</article>
+</main>
+<footer>
+	<p>time will log</p>
+</footer>
