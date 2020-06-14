@@ -1,0 +1,40 @@
+:root {
+	font-size: 18px;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	display: grid;
+	min-height: 100vh;
+	grid-auto-rows: min-content 1fr min-content;
+	margin: 0;
+}
+
+body > header {
+	text-align: center;
+	padding: 0 2em;
+}
+
+body > header > h1 + img {
+	max-width: 80%;
+	border-radius: 50%;
+}
+
+body > main {
+	margin: 0 auto 3em;
+	width: 100%;
+	max-width: 1280px;
+	padding: 0 1em;
+}
+
+body > footer {
+	text-align: center;
+	padding: 1ch;
+}

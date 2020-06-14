@@ -1,0 +1,43 @@
+body > header {
+	text-align: center;
+}
+
+body > main > section {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.posts li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+.posts li time {
+	font-family: monospace;
+	width: 100%;
+	order: -1;
+}
+
+@media (min-width: 30em) {
+	.posts {
+		display: grid;
+		align-items: center;
+		grid-template-columns: auto max-content;
+		gap: 1em 2em;
+	}
+
+	.posts li {
+		display: contents;
+	}
+
+	.posts li time {
+		order: 0;
+	}
+}
