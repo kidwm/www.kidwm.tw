@@ -6,6 +6,7 @@
 	<link href="{{ '/styles/base.css' | url }}" rel="stylesheet" />
 	{% if style %}
 	<link href="{{ style | url }}" rel="stylesheet" />
+	<link rel="alternate" type="application/atom+xml" title="{{ metadata.title }}" href="{{ '/feed.xml' | url }}" />
 	{% endif %}
 	<title>{{ renderData.title or title or metadata.title }}</title>
 	<meta name="description" content="{{ renderData.description or description or metadata.description }}" />
