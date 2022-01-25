@@ -12,3 +12,8 @@ main > article > p > img {
 	margin: 0 auto;
 	max-width: 100%;
 }
+
+main > article > pre {
+	overflow-x: auto;
+	max-width: calc(100vw - 2em);
+}
