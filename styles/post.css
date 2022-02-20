@@ -1,3 +1,7 @@
+body {
+	grid-auto-rows: 1fr min-content;
+}
+
 main > article {
 	padding-bottom: 2em;
 }
@@ -16,4 +20,38 @@ main > article > p > img {
 main > article > pre {
 	overflow-x: auto;
 	max-width: calc(100vw - 2em);
+}
+
+main > article > blockquote {
+	position: relative;
+	margin: 1em 0;
+	padding: 1em 2em;
+}
+
+main > article > blockquote::before,
+main > article > blockquote::after {
+	position: absolute;
+	font-size: 3rem;
+	opacity: 0.5;
+}
+
+main > article > blockquote::before {
+	content: "“";
+	left: 0;
+	top: 0;
+}
+
+main > article > blockquote::after {
+	content: "”";
+	right: 0;
+	bottom: 0;
+}
+
+main > article > blockquote > p:last-of-type {
+	text-align: right;
+}
+
+main > article > blockquote > p:last-of-type::before {
+	content: '―';
+	margin-right: 1ch;
 }
